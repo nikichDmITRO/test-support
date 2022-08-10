@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Edu+NSW+ACT+Foundation&family=Roboto+Flex:opsz@8..144&family=Work+Sans:wght@200&display=swap");
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -16,10 +18,9 @@ h3,
 h4,
 h5,
 h6,
-p,
 ol,
 ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-weight: normal;
   max-width: 1920px;
@@ -40,7 +41,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 520px;
+  height: 600px;
 }
 .container {
   position: relative;
@@ -48,20 +49,277 @@ img {
   margin: 0 0 0 300px;
 }
 .menu-flex {
+  width: 100%;
   position: absolute;
-  top: 30px;
+  top: 10px;
   height: 20px;
-  margin-bottom: 300px;
+
   display: flex;
   justify-content: space-between;
 }
+
+.menu-flex__logo {
+margin-top: 10px;
+  font-size: 25px;
+  color:red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.menu-flex-span {
+  color: #fff;
+  margin-left: -4px;
+}
+
 .menu-flex__nav {
+  width: 60%;
 }
 .menu-flex__link {
   display: inline-block;
+  margin-right: 45px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 17er;
+  transition: transform 700ms ease;
+  cursor: pointer;
+}
+.menu-flex__link:hover{
+color: rgb(0, 255, 213);
+transform: scale(1.2);
+
+}
+.menu-flex__icon {
+  border-bottom: 12px double #fff;
+  width: 50px;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+.menu-flex__icon:hover{
+  border-bottom: 12px double black;
+ 
 }
 
-.divfa{
-    position: absolute;
-    top: 277px;
+.header-info {
+  position: absolute;
+  top: 249px;
+  left: 300px;
+}
+
+.header-info__teg {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+}
+.header-info__text {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.sport-type {
+  width: 80%;
+
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  }
+
+
+.sport-type__p{
+  transition: transform 800ms ease;
+  cursor: pointer;
+}
+
+
+
+.sport-type__p:hover{
+  color: rgba(0, 217, 255, 0.712);
+  transform: scale(1.2);
+}
+.header-title {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  background-color: #f01b0d;
+}
+.main {
+  color: black;
+  height: auto;
+}
+.main-container-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-info {
+  max-width: 640px;
+  margin-bottom: 60px;
+}
+.main_p{
+  font-family: "Roboto Flex";
+  font-size: 20px;
+margin-top: 40px;
+margin-bottom: 24px;}
+.main-info__img {
+}
+.main-info__flex {
+  margin-top: 19px;
+}
+.main-info__date {
+  font-family: "Roboto Flex";
+  font-size: 14px;
+  color: #828282;
+}
+.main-info__separator {
+}
+.main-info__teg {
+  font-family: "Roboto Flex";
+  font-size: 14px;
+  font-weight: 600;
+}
+.main-info__heading {
+  font-family: "Roboto Flex";
+
+  font-weight: 700;
+  font-size: 26px;
+
+  line-height: 32px;
+  margin: 10px 0 10px 0;
+}
+.main-info__text {
+  font-family: "Roboto Flex";
+  margin: 0 0 0 0;
+  font-size: 20px;
+  line-height: 25px;
+  color: #828282;
+}
+
+@media (max-width: 1650px) {
+  .container {
+    margin: 0 0 0 200px;
+  }
+  .header-info {
+    left: 290px;
+  }
+}
+@media (max-width: 1500px) {
+  .container {
+    max-width: 1300px;
+    margin: 0 0 0 200px;
+  }
+  .menu-flex__nav {
+    width: 65%;
+  }
+  .header-info {
+    left: 280px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 0 0 180px;
+  }
+  .menu-flex__nav {
+    width: 68%;
+  }
+  .menu-flex__link {
+    margin-right: 42px;
+  }
+  .header-info {
+    left: 270px;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1100px;
+    margin: 0 0 0 150px;
+  }
+  .menu-flex__nav {
+    width: 70%;
+  }
+  .menu-flex__link {
+    margin-right: 36px;
+  }
+  .header-info {
+    left: 240px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1050px;
+    margin: 0 0 0 140px;
+  }
+  .menu-flex__nav {
+    width: 73%;
+  }
+  .menu-flex__link {
+    margin-right: 33px;
+  }
+  .header-info {
+    left: 250px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1050px;
+    margin: 0 0 0 138px;
+  }
+  .menu-flex__nav {
+    width: 73%;
+  }
+  .menu-flex__link {
+    margin-right: 31px;
+  }
+  .header-info {
+    left: 240px;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 0 0 70px;
+  }
+  .menu-flex__nav {
+    width: 73%;
+  }
+  .menu-flex__link {
+    margin-right: 25px;
+  }
+  .header-info {
+    left: 230px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 900px;
+    margin: 0 0 0 43px;
+  }
+  .menu-flex__nav {
+    width: 81%;
+  }
+  .menu-flex__link {
+    margin-right: 18px;
+  }
+  .header-info {
+    left: 230px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 900px;
+    margin: 0 0 0 43px;
+  }
+  .menu-flex__nav {
+    width: 81%;
+  }
+  .menu-flex__link {
+    margin-right: 18px;
+  }
+  .menu-flex__link {
+    display: none;
+  }
+  .header-info {
+    left: 220px;
+  }
 }
